@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="ts.hn.tstest.TsTestMainActivity" >
+
+    <item
+        android:id="@+id/action_movie"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="movies"/>
+    
+     <item
+        android:id="@+id/action_movie2"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="movies2"/>
+    
+    <item
+        android:id="@+id/action_music"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="music"/>
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+
+</menu>

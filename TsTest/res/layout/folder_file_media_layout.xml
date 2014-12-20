@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- Top parent -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- info layout -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/ts_txt_amount_song"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="23 songs" />
+
+            <TextView
+                android:id="@+id/ts_txt_position_song"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="13/23" />
+
+            <ImageView
+                android:id="@+id/ts_btn_swap_to_control"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_launcher" />
+        </LinearLayout>
+        <!-- seletected layout -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <FrameLayout
+                android:id="@+id/ts_btn_folder"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/yellow_100" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/folder" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/ts_btn_file"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/amber_100" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_launcher" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 2 listviews -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <!-- listview folder -->
+
+        <LinearLayout
+            android:id="@+id/ts_ll_listview_folder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ListView
+                android:id="@+id/ts_listview_folder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </ListView>
+        </LinearLayout>
+        <!-- listview file -->
+
+        <LinearLayout
+            android:id="@+id/ts_ll_listview_file"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" >
+
+            <ListView
+                android:id="@+id/ts_listview_file"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </ListView>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

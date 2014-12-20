@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.tshandler.TsHandlerMainActivity" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hello_world" />
+
+            <Button
+                android:id="@+id/btn_bind"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="bind to service" />
+
+            <Button
+                android:id="@+id/btn_unbind"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="un bind to service" />
+
+            <Button
+                android:id="@+id/btn_play"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="play" />
+
+            <Button
+                android:id="@+id/btn_pause"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="pause" />
+
+            <Button
+                android:id="@+id/btn_resume"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="resume" />
+
+            <Button
+                android:id="@+id/btn_stop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="stop" />
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Next" />
+
+            <Button
+                android:id="@+id/btn_prev"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="prev" />
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/view_repeat" >
+    </include>
+
+</LinearLayout>

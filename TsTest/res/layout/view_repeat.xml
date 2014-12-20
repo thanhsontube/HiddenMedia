@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#90293576"
+    android:orientation="vertical" >
+
+    <!-- layer 2 -->
+
+    <LinearLayout
+        android:id="@+id/layer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp" >
+
+        <!-- seekbar duration -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="40dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/txt_white_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:minHeight="50dp"
+                android:orientation="horizontal" >
+
+                <SeekBar
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    style="@style/txt_white_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="05:00" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- repeat - shuffle - next controller -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <!-- repeat and shuffle -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <!-- repeat -->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/repeat" />
+                </LinearLayout>
+                <!-- shuffle -->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/shuffle" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- next RSS -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/txt_white_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="Next RSS" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
